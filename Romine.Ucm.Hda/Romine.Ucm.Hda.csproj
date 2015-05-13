@@ -67,6 +67,7 @@
     <Compile Include="Data\ResultSet.cs" />
     <Compile Include="Data\ResultSetColumn.cs" />
     <Compile Include="Data\ResultSetRow.cs" />
+    <Compile Include="HdaStringUtils.cs" />
     <Compile Include="HdaWriter.cs" />
     <Compile Include="HdaReaderException.cs" />
     <Compile Include="HdaReader.cs" />

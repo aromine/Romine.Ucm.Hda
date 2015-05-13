@@ -15,17 +15,23 @@ namespace Romine.Ucm.Hda.TestApp
             
             Stream stream = File.OpenRead("search.hda");
 
-            HdaReader<HdaDataBinder> parser = new HdaReader<HdaDataBinder>();
+            HdaReader<HdaDataBinder> reader = new HdaReader<HdaDataBinder>();
+            Stopwatch sw = Stopwatch.StartNew();
+            HdaDataBinder binder = reader.Read(stream);
+            sw.Stop();
+            Console.WriteLine("Took " + sw.ElapsedMilliseconds + " to read the HDA file.");
 
-            HdaDataBinder binder = parser.Read(stream);
-
+            sw.Reset();
+            sw.Start();
             writeBinderToFile(binder, "new.hda");
+            sw.Stop();
+            Console.WriteLine("Took " + sw.ElapsedMilliseconds + " to write the HDA file.");
 
-            binder = parser.Read(binder.ToString());
+            binder = reader.Read(binder.ToString());
 
             writeBinderToFile(binder, "new2.hda");
             
-            Console.WriteLine(FilesAreEqual(new FileInfo("new.hda"), new FileInfo("new2.hda")));
+            Console.WriteLine("Are the written files identical? " + (FilesAreEqual(new FileInfo("new.hda"), new FileInfo("new2.hda")) ? "Yes" : "No"));
 
             Console.ReadKey(true);
 

@@ -73,10 +73,10 @@ namespace Romine.Ucm.Hda
             foreach (string key in binder.Properties.Keys)
             {
                 writer.Write(binder.Properties[key].Comments);
-                writer.WriteLine("@Properties {0}", HdaReader<HdaDataBinder>.Encode(key));
+                writer.WriteLine("@Properties {0}", HdaStringUtils.Encode(key));
                 foreach (string ld in binder.Properties[key].Keys)
                 {
-                    writer.WriteLine("{0}={1}", HdaReader<HdaDataBinder>.Encode(ld), HdaReader<HdaDataBinder>.Encode(binder.LocalData[ld]));
+                    writer.WriteLine("{0}={1}", HdaStringUtils.Encode(ld), HdaStringUtils.Encode(binder.LocalData[ld]));
                 }
                 writer.WriteLine("@end");
             }
@@ -84,10 +84,10 @@ namespace Romine.Ucm.Hda
             foreach (string key in binder.OptionLists.Keys)
             {
                 writer.Write(binder.OptionLists[key].Comments);
-                writer.WriteLine("@OptionList {0}", HdaReader<HdaDataBinder>.Encode(key));
+                writer.WriteLine("@OptionList {0}", HdaStringUtils.Encode(key));
                 foreach (string item in binder.OptionLists[key])
                 {
-                    writer.WriteLine(HdaReader<HdaDataBinder>.Encode(item));
+                    writer.WriteLine(HdaStringUtils.Encode(item));
                 }
                 writer.WriteLine("@end");
             }
@@ -96,13 +96,13 @@ namespace Romine.Ucm.Hda
             {
                 ResultSet rs = binder.ResultSets[key];
                 writer.Write(rs.Comments);
-                writer.WriteLine("@ResultSet {0}", HdaReader<HdaDataBinder>.Encode(key));
+                writer.WriteLine("@ResultSet {0}", HdaStringUtils.Encode(key));
                 int count = rs.Columns.Count;
                 writer.WriteLine(count);
 
                 foreach (ResultSetColumn column in rs.Columns)
                 {
-                    writer.Write(HdaReader<HdaDataBinder>.Encode(column.Name));
+                    writer.Write(HdaStringUtils.Encode(column.Name));
                     if (column.Type != ResultSetColumn.DataType.NOT_SPECIFIED)
                     {
                         writer.Write(' ');
@@ -122,7 +122,7 @@ namespace Romine.Ucm.Hda
 
                     for (int j = 0; j < count; j++)
                     {
-                        writer.WriteLine(HdaReader<HdaDataBinder>.Encode(row[row.Keys[j]]));
+                        writer.WriteLine(HdaStringUtils.Encode(row[row.Keys[j]]));
                     }
 
                 }
