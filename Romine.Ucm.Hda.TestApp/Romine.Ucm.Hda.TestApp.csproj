@@ -47,7 +47,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Romine.Ucm.HdaParser\Romine.Ucm.Hda.csproj">
+    <ProjectReference Include="..\Romine.Ucm.Hda\Romine.Ucm.Hda.csproj">
       <Project>{f8df4e88-0a63-4ada-b6cd-3637e70b50ef}</Project>
       <Name>Romine.Ucm.Hda</Name>
     </ProjectReference>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Romine.Ucm.Hda", "Romine.Ucm.HdaParser\Romine.Ucm.Hda.csproj", "{F8DF4E88-0A63-4ADA-B6CD-3637E70B50EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Romine.Ucm.Hda", "Romine.Ucm.Hda\Romine.Ucm.Hda.csproj", "{F8DF4E88-0A63-4ADA-B6CD-3637E70B50EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Romine.Ucm.Hda.TestApp", "Romine.Ucm.Hda.TestApp\Romine.Ucm.Hda.TestApp.csproj", "{AA6BEC77-EAE3-408A-BD3C-C4B7873AB64B}"
 EndProject
