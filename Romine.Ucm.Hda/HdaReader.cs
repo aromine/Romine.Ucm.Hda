@@ -8,6 +8,15 @@ using Romine.Ucm.Hda.Data;
 
 namespace Romine.Ucm.Hda
 {
+    /// <summary>
+    /// Provides a default implementation that uses the HdaDataBinder.  The generic class can be used to allow extensible binders.
+    /// </summary>
+    public class HdaReader : HdaReader<HdaDataBinder>
+    {
+        public HdaReader() : base() { }
+        public HdaReader(Encoding encoding) : base(encoding) { }
+    }
+
     public class HdaReader<T> where T : IDataBinder, new() 
     {
         //const string BEGIN_HDA_NO_HEADER = "@Prop";

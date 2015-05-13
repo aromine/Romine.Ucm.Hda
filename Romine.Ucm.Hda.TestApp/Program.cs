@@ -15,7 +15,7 @@ namespace Romine.Ucm.Hda.TestApp
             
             Stream stream = File.OpenRead("search.hda");
 
-            HdaReader<HdaDataBinder> reader = new HdaReader<HdaDataBinder>();
+            HdaReader reader = new HdaReader();
             Stopwatch sw = Stopwatch.StartNew();
             HdaDataBinder binder = reader.Read(stream);
             sw.Stop();
