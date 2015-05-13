@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Romine.UCM.HdaParserPrototype")]
+[assembly: AssemblyTitle("Romine.Ucm.Hda")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Aaron Romine")]
-[assembly: AssemblyProduct("Romine.UCM.HdaParserPrototype")]
-[assembly: AssemblyCopyright("Copyright © Aaron Romine 2009 All Rights Reserved")]
+[assembly: AssemblyProduct("Romine.Ucm.Hda")]
+[assembly: AssemblyCopyright("Copyright © Aaron Romine 2009,2015 All Rights Reserved")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
