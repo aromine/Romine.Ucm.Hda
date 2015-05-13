@@ -1,0 +1,51 @@
+<?hda version="7.5.2 (061212)" jcharset=Cp1252 encoding=iso-8859-1?>
+@Properties LocalData
+StartRow=1
+HasRowAndDocCount=true
+refreshSubjects=
+blFieldTypes=xWebsiteUrlValue bigtext,xTrashDeleteDate date,xTrashDeleter text,xHidden text,StatusMessage message,xWebsiteObjectType text,xWebsiteSection bigtext,xDontShowInListsForWebsites memo,xProductName bigtext,xDocumentDate date,xDocSubType text,xMoreInfoUrl memo,xResourceLinks memo,dCreateDate date,dReleaseDate date,xCourseNumber text,xTopicArea bigtext,dOutDate date,xTrashDeleteName memo,xRegistrationUrl memo,xScheduleDateEnd date,xResourceSections memo,xIsDownloadable text,xResourceContent memo,xRegistrationComments bigtext,xInhibitUpdate text,xTrainingMode bigtext,xTrashDeleteLoc int,xScheduleTimeZone text,dInDate date,xDocSubSubType text,xTemplateType text,xReadOnly text,xScheduleDate date,xCollectionID int,xComments memo,xWebsites memo,xRegistrationTopic bigtext,xContentCategory bigtext,xSolutionType bigtext,dMessage message
+EndRow=2000
+EnterpriseSearchMaxRows=4
+refreshMonikers=
+PageNumber=1
+siteRelativeUrl=/idc/idcplg
+ResultCount=2000
+IdcService=GET_SEARCH_RESULTS
+changedSubjects=
+NumPages=1
+TotalRows=394
+IsJava=1
+TotalDocsProcessed=394
+changedMonikers=
+SearchProviders=www
+ssUrlPrefix=/
+TranslatedQueryText=
+Text2=<span class=xsmall><span class=infoLabel><$lc("wwContentAuthorLabel")$></span><$dDocAuthor$> \r\n<span class=infoLabel><$lc("wwLabelRevision")$></span> <$dRevLabel$></span><br>\r\n<span class=xsmall><span class=infoLabel><$lc("wwLabelReleaseDate")$></span> <$dInDate$>&nbsp;&nbsp;\r\n<$if SCORE$><span class=infoLabel><$lc("wwScore")$>:</span> <$SCORE$><$endif$></span><br>\r\n<$if xComments$>\r\n<span class=xxsmall><font color=<$highlightFieldColor$>><$xComments$></font></span>\r\n<$endif$>\r\n<table valign=bottom align=right><tr><td><span class=xxsmall>\r\n<$dFormat$> <$(VaultFileSize+1023)/1024$>K\r\n</td></tr></table>
+Text1=<span class=searchLabel><$dDocTitle$>&nbsp;&nbsp;</span><span class=xsmall>[&nbsp;<$dDocName$>&nbsp;]</span>
+blDateFormat=M/d/yy {h:mm[:ss] {aa}[zzz]}!mAM,PM!tAmerica/New_York
+QueryText=
+www:conversionFormat=
+siteId=public
+FullRequest=&QueryText=
+OriginalQueryText=
+refreshSubMonikers=
+dUser=anonymous
+@end
+@OptionList MyList
+one
+two
+eight
+three
+five
+@end
+@OptionList Test
+
+
+Three
+Four
+4
+1
+3
+
+two
+@end

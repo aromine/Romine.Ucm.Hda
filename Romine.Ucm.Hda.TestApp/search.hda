@@ -1,0 +1,35 @@
+<?hda version="11gR1-dev" jcharset=utf8 encoding=utf-8?>
+
+@ResultSet PucTemplates
+5
+name
+class
+formtype
+filename
+description
+POPUP_CALENDAR_JS
+javascript:puc
+PopUpCalendar
+puc.js
+PopUpCalendar's javascript methods
+JSLIB_LOCALE_CTYPE_JS
+javascript:puc:jslib:locale:ctype
+JSLib
+jslib/locale/ctype.js
+JavaScript derived from BSD/libc: ctype(3)
+JSLIB_STDTIME_STRFTIME_JS
+javascript:puc:jslib:stdtime:strftime
+JSLib
+jslib/stdtime/strftime.js
+JavaScript derived from BSD/libc: strftime(3)
+JSLIB_STDTIME_STRPTIME_JS
+javascript:puc:jslib:stdtime:stptime
+JSLib
+jslib/stdtime/strptime.js
+JavaScript derived from BSD/libc: strptime(3)
+JSLIB_STDTIME_TIMELOCAL_JS
+javascript:puc:jslib:stdtime:timelocal
+JSLib
+jslib/stdtime/timelocal.js
+JavaScript derived from BSD/libc: timelocal.c, tzfile.h
+@end
